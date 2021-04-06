@@ -135,7 +135,7 @@ a:active {
 /* ----- BUTTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -147,7 +147,7 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit] {
+input[type="submit"] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #ffffff;
@@ -162,8 +162,8 @@ input[type=submit] {
 
 .btn:hover,
 .btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #bf6516;
 }
 
@@ -349,7 +349,8 @@ header {
 /* TESTIMONIALS */
 /* --------------------------------------------------------------------- */
 .section-testimonials {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
   background-size: cover;
   color: #ffffff;
   background-attachment: fixed;
@@ -412,7 +413,7 @@ cite img {
   border-top-right-radius: 5px;
 }
 
-.plan-box div:last-child { 
+.plan-box div:last-child {
   text-align: center;
   border: 0;
 }
@@ -442,7 +443,7 @@ cite img {
 }
 
 /* --------------------------------------------------------------------- */
-/* PLANS */
+/* FORM */
 /* --------------------------------------------------------------------- */
 
 .contact-form {
@@ -454,8 +455,8 @@ cite img {
   padding-top: 8px;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 100%;
@@ -469,14 +470,97 @@ textarea {
   height: 100px;
 }
 
-input[type=checkbox] {
-  margin: 10px 5px 10px 0
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
 }
 
-input[type=submit] {
+input[type="submit"] {
   font: inherit;
 }
 
 *:focus {
   outline: none;
+}
+
+/* --------------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------------- */
+footer {
+  background-color: #555555;
+  padding: 40px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: none;
+  color: #888888;
+  transition: color 0.3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #f4f4f4;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 150%;
+}
+
+.icon-facebook ion-icon,
+.icon-twitter ion-icon,
+.icon-google ion-icon,
+.icon-instagram ion-icon {
+  transition: color 0.3s;
+}
+
+.icon-facebook ion-icon:hover,
+.icon-facebook ion-icon:active {
+  color: #1877f2;
+}
+
+.icon-twitter ion-icon:hover,
+.icon-twitter ion-icon:active {
+  color: #1da1f2;
+}
+
+.icon-google ion-icon:hover,
+.icon-google ion-icon:active {
+  color: #ea4335;
+}
+
+.icon-instagram ion-icon:hover,
+.icon-instagram ion-icon:active {
+  color: #c32aa3;
+}
+
+footer p {
+  color: #888888;
+  text-align: center;
+  margin-top: 10px
 }
