@@ -45,24 +45,42 @@ $(document).ready(function () {
       $(".js--wp-2").addClass("animate__animated");
       $(".js--wp-2").addClass("animate__fadeInUp");
     },
-    offset: "50%"
+    offset: "50%",
   });
 
   var animateCities = new Waypoint({
     element: $(".js--wp-3"),
-    handler: function(direction) {
+    handler: function (direction) {
       $(".js--wp-3").addClass("animate__animated");
       $(".js--wp-3").addClass("animate__fadeIn");
     },
-    offset: "60%"
+    offset: "60%",
   });
 
   var animatePremiumPlan = new Waypoint({
     element: $(".js--wp-4"),
-    handler: function(direction) {
+    handler: function (direction) {
       $(".js--wp-4").addClass("animate__animated");
       $(".js--wp-4").addClass("animate__pulse");
     },
-    offset: "60%"
-  })
+    offset: "60%",
+  });
+
+  /** Mobile navigation */
+  $(".js--nav-icon").click(function () {
+    var nav = $(".js--main-nav");
+    var icon = $(".js--nav-icon ion-icon");
+    var elementForIcon = $(".js--nav-icon");
+    
+    nav.slideToggle(200);
+
+    if(icon.prop("name") == "menu-outline"){
+      elementForIcon.html('<ion-icon name="close-outline"></ion-icon>');
+
+    } else {
+      elementForIcon.html('<ion-icon name="menu-outline"></ion-icon>');
+    }
+  });
+
+  /*<ion-icon name="close-outline"></ion-icon>;*/
 });
